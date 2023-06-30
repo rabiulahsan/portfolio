@@ -15,6 +15,19 @@ const Navbar = () => {
 
   const element = document.documentElement;
 
+  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  console.log(darkQuery);
+
+  const onSystemTheme = () => {
+    if (theme === "dark" || (theme === "system" && darkQuery.matches)) {
+      element.classList.add("dark");
+    } else {
+      console.log(darkQuery.matches);
+      element.classList.remove("dark");
+    }
+  };
+  onSystemTheme();
+
   useEffect(() => {
     if (theme === "dark") {
       element.classList.add("dark");
@@ -36,11 +49,20 @@ const Navbar = () => {
     setTheme(theme);
   };
   const handleSystem = () => {
-    localStorage.setItem("theme", "system");
-
-    const theme = localStorage.getItem("theme");
-    setTheme(theme);
+    setTheme("system");
+    localStorage.removeItem("theme");
+    onSystemTheme();
   };
+
+  darkQuery.addEventListener("change", (e) => {
+    if (theme === "system") {
+      if (e.matches) {
+        element.classList.add("dark");
+      } else {
+        element.classList.remove("dark");
+      }
+    }
+  });
 
   return (
     <div>
