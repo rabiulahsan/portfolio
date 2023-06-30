@@ -6,6 +6,7 @@ import {
   BsFillMoonFill,
   BsFillDisplayFill,
 } from "react-icons/bs";
+import "./Navbar.css";
 
 const Navbar = () => {
   const selectedTheme = localStorage.getItem("theme");
@@ -51,24 +52,34 @@ const Navbar = () => {
         </Link>
         <div className=" dark:text-white ">
           <ul className="flex text-base font-semibold ">
-            <li className="mx-2 px-2 navlink-hover">
-              <Link to="/">Home</Link>
+            <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
+              <span>
+                <Link to="/">Home</Link>
+              </span>
             </li>
 
-            <li className="mx-2 px-2 navlink-hover">
-              <Link to="/">About</Link>
+            <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
+              <span>
+                <Link to="/">About</Link>
+              </span>
             </li>
 
-            <li className="mx-2 px-2 navlink-hover">
-              <Link to="/">Skills</Link>
+            <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
+              <span>
+                <Link to="/">Skills</Link>
+              </span>
             </li>
 
-            <li className="mx-2 px-2 navlink-hover">
-              <Link to="/">Projects</Link>
+            <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
+              <span>
+                <Link to="/">Projects</Link>
+              </span>
             </li>
 
-            <li className="mx-2 px-2 navlink-hover">
-              <Link to="/">Contact</Link>
+            <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
+              <span>
+                <Link to="/">Contact</Link>
+              </span>
             </li>
           </ul>
         </div>
