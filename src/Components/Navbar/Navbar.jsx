@@ -43,13 +43,13 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex  justify-between items-center px-[6%] pt-[2%] pb-[1%] bg-white sticky top-0 z-10">
+      <div className="flex  justify-between items-center px-[6%] pt-[2%] pb-[1%] bg-white dark:bg-slate-900 sticky top-0 z-10">
         <Link to="/">
-          <p className="text-balck font-bold text-3xl cursor-pointer">
+          <p className="text-balck dark:text-white font-bold text-3xl cursor-pointer">
             Rabiul Ahsan
           </p>
         </Link>
-        <div className=" ">
+        <div className=" dark:text-white ">
           <ul className="flex text-base font-semibold ">
             <li className="mx-2 px-2 navlink-hover">
               <Link to="/">Home</Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="text-black">
+        <div className="text-black dark:text-white">
           <button
             title="Light theme"
             onClick={handleLight}

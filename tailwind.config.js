@@ -5,8 +5,8 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  // darkMode: 'class',
-  darkMode: 'media',
+  darkMode: 'class',
+  // darkMode: 'media',
   theme: {
     extend: {},
   },
