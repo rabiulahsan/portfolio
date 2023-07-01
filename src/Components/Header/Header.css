@@ -1,3 +1,4 @@
+/* for header image annimation  */
 .header-img img{
     animation: profile-animate 6s ease-in-out infinite 1s;
 }
@@ -20,7 +21,7 @@
 }
 
 
-
+ /* for button hover effect */
 .button::before {
     content: "";
     position: absolute;
@@ -29,7 +30,7 @@
     width: 0;
     height: 0;
     border-radius: 50%;
-    background-color: rgb(239, 116, 34);
+    /* background-color: rgb(239, 116, 34); */
     transform: translate(-50%, -50%);
     transition: width 0.5s, height 0.5s;
   }  
