@@ -119,7 +119,7 @@ const Header = () => {
       <div className="header-img">
         <img
           src="/src/assets/rabiul.jpg"
-          className="h-[300px] border-8 border-gray-600"
+          className="h-[300px] border-4 border-gray-600 dark:border-blue-200"
           alt=""
         />
       </div>
