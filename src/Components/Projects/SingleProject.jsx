@@ -18,18 +18,18 @@ const SingleProject = ({ project }) => {
   };
 
   return (
-    <div className="p-4 border border-gray-400 text-slate-700 dark:text-white">
+    <div className="p-4 border border-gray-400 text-slate-700 dark:text-white flex flex-col">
       <img src={img} alt="" className="h-[200px] mb-5" />
       <p className="text-2xl font-semibold mb-3">{name}</p>
       <p className="mb-3">
         <span className="font-semibold text-lg ">Technology used: </span>
         {technologies}
       </p>
-      <p className="mb-3">
+      <p className="mb-5">
         <span className="font-semibold text-lg ">Description: </span>
         {description}
       </p>
-      <div className=" flex flex-grow justify-between items-center ">
+      <div className=" flex  justify-between items-center mt-auto">
         {/* live site lnk  */}
         <a href={liveSite} target="blank">
           <button
