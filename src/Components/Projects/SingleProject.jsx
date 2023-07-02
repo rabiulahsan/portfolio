@@ -35,7 +35,7 @@ const SingleProject = ({ project }) => {
           <button
             onMouseMove={(e) => handleMouseMove(e)}
             style={buttonStyles}
-            className={` button p-2 font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
+            className={` button px-3 py-2 font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
           >
             <span className="relative z-10">Live Site</span>
           </button>
@@ -46,7 +46,7 @@ const SingleProject = ({ project }) => {
           <button
             onMouseMove={(e) => handleMouseMove(e)}
             style={buttonStyles}
-            className={` button p-2 font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
+            className={` button px-3 py-2 font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
           >
             <span className="relative z-10">Client Code</span>
           </button>
@@ -57,7 +57,7 @@ const SingleProject = ({ project }) => {
           <button
             onMouseMove={(e) => handleMouseMove(e)}
             style={buttonStyles}
-            className={` button p-2 font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
+            className={` button px-3 py-2 font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
           >
             <span className="relative z-10">Backend Code</span>
           </button>
