@@ -2,6 +2,7 @@ import { useState } from "react";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import "./Skills.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { BsBraces, BsServer } from "react-icons/bs";
 import ProgressBar from "./ProgressBar";
 
 const Skills = () => {
@@ -33,7 +34,14 @@ const Skills = () => {
         <div className="w-[30%]">
           <p className="flex justify-between  items-center dark:text-white ">
             {" "}
-            <span className="text-xl font-semibold">Front End Development</span>
+            <p className="flex items-center">
+              <span className="mr-4 text-blue-400 font-bold text-3xl">
+                <BsBraces></BsBraces>
+              </span>
+              <span className="text-xl font-semibold">
+                Front End Development
+              </span>
+            </p>
             <span
               className="cursor-pointer text-2xl"
               onClick={() => {
@@ -66,7 +74,14 @@ const Skills = () => {
         <div className="w-[30%]">
           <p className="flex justify-between  items-center dark:text-white ">
             {" "}
-            <span className="text-xl font-semibold">Back End Development</span>
+            <p className="flex items-center">
+              <span className="mr-4 text-blue-400 font-bold text-3xl">
+                <BsServer></BsServer>
+              </span>
+              <span className="text-xl font-semibold">
+                Back End Development
+              </span>
+            </p>
             <span
               className="cursor-pointer text-2xl"
               onClick={() => {
