@@ -11,20 +11,20 @@ const Skills = () => {
   // IoIosArrowDown
   // IoIosArrowUp
   const frontEnd = [
-    { name: "HTML", learn: "80%" },
-    { name: "CSS", learn: "70%" },
-    { name: "JavaScript", learn: "65%" },
-    { name: "React", learn: "60%" },
-    { name: "Tailwind", learn: "80%" },
-    { name: "MUI", learn: "70%" },
+    { name: "HTML", learn: "80" },
+    { name: "CSS", learn: "70" },
+    { name: "JavaScript", learn: "65" },
+    { name: "React", learn: "60" },
+    { name: "Tailwind", learn: "80" },
+    { name: "MUI", learn: "70" },
   ];
 
   const backEnd = [
-    { name: "Node", learn: "40%" },
-    { name: "ExpressJS", learn: "50%" },
-    { name: "Firebase", learn: "50%" },
-    { name: "MongoDB", learn: "40%" },
-    { name: "JWT", learn: "60%" },
+    { name: "Node", learn: "40" },
+    { name: "ExpressJS", learn: "50" },
+    { name: "Firebase", learn: "50" },
+    { name: "MongoDB", learn: "40" },
+    { name: "JWT", learn: "60" },
   ];
 
   return (

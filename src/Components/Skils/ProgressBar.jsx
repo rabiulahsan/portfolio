@@ -4,17 +4,17 @@ const ProgressBar = ({ name, learn }) => {
   return (
     <div className="mb-5">
       <p className="flex justify-between items-center text-slate-800 dark:text-white mb-2">
-        <span>{name}</span> <span>{learn}</span>
+        <span>{name}</span> <span>{learn}%</span>
       </p>
-      <div className="w-full bg-gray-200 rounded-full">
+      {/* <div className="w-full bg-gray-200 rounded-full">
         <div className={`h-2 bg-blue-400 rounded-full w-[${learn}]`}></div>
-      </div>
+      </div> */}
 
-      {/* <progress
-          className="progress progress-info bg-red-600 text-blue-900 w-56"
-          value={learn}
-          max="100"
-        ></progress> */}
+      <progress
+        className="progress progress-info w-full"
+        value={learn}
+        max="100"
+      ></progress>
     </div>
   );
 };
