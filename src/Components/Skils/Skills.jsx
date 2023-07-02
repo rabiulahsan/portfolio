@@ -34,14 +34,14 @@ const Skills = () => {
         <div className="w-[30%]">
           <p className="flex justify-between  items-center dark:text-white ">
             {" "}
-            <p className="flex items-center">
+            <span className="flex items-center">
               <span className="mr-4 text-blue-400 font-bold text-3xl">
                 <BsBraces></BsBraces>
               </span>
               <span className="text-xl font-semibold">
                 Front End Development
               </span>
-            </p>
+            </span>
             <span
               className="cursor-pointer text-2xl"
               onClick={() => {

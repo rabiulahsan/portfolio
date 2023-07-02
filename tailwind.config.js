@@ -7,6 +7,7 @@ export default {
   ],
   darkMode: 'class',
   // darkMode: 'media',
+  important: true,
   theme: {
     extend: {},
   },
