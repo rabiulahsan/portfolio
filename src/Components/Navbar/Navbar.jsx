@@ -7,8 +7,11 @@ import {
   BsFillDisplayFill,
 } from "react-icons/bs";
 import "./Navbar.css";
+import useScrollBar from "../../Hooks/useScrollBar";
 
 const Navbar = () => {
+  const completion = useScrollBar();
+
   const selectedTheme = localStorage.getItem("theme");
   const [theme, setTheme] = useState(selectedTheme ? selectedTheme : "system");
   console.log(theme);
@@ -65,8 +68,8 @@ const Navbar = () => {
   });
 
   return (
-    <div>
-      <div className="flex  justify-between items-center px-[10%] pt-[2%] pb-[1%] bg-white dark:bg-slate-900 sticky top-0 z-10">
+    <div className="sticky top-0 z-10">
+      <div className="flex  justify-between items-center px-[10%] py-[1%] bg-white dark:bg-slate-900 ">
         <Link to="/">
           <p className="text-balck dark:text-white font-bold text-3xl cursor-pointer">
             Rabiul Ahsan
@@ -135,6 +138,10 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      <span
+        className="absolute bg-blue-400 h-[4px] left-0 bottom-[-4px] w-full"
+        style={{ transform: `translatex(${completion - 100}%)` }}
+      />
     </div>
   );
 };
