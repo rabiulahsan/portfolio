@@ -23,6 +23,7 @@ const Skills = () => {
     { name: "ExpressJS", learn: "50%" },
     { name: "Firebase", learn: "50%" },
     { name: "MongoDB", learn: "40%" },
+    { name: "JWT", learn: "60%" },
   ];
 
   return (
