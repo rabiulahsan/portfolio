@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 text-white bg-slate-800   ">
+    <footer className="footer footer-center px-4 py-6 lg:p-10 text-white bg-slate-800   ">
       <div className="grid grid-flow-col gap-4">
         <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
           <Link to="home" smooth={true} duration={500} offset={-50}>
@@ -70,7 +70,12 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p>Copyright © 2023 - All right reserved by Rabiul Ahsan</p>
+        <p>
+          Copyright © 2023 - All right reserved by
+          <span className=" text-lg font-semibold text-blue-400">
+            Rabiul Ahsan
+          </span>
+        </p>
       </div>
     </footer>
   );
