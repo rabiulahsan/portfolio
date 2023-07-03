@@ -27,9 +27,9 @@ const Header = () => {
   };
 
   return (
-    <div className="px-[10%] py-[8%]   flex justify-around items-center">
+    <div className="px-[10%] py-[8%] gap-y-6  flex justify-around items-center flex-col-reverse lg:flex-row ">
       <div className="">
-        <ul className="text-2xl dark:text-white flex flex-col gap-y-4 items-center">
+        <ul className="text-2xl dark:text-white flex lg:flex-col gap-4 items-center">
           <li>
             <a
               title="Github Profile link"
@@ -62,11 +62,11 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className=" w-1/3">
-        <p className="text-black dark:text-white text-5xl font-bold">
+      <div className="w-full lg:w-1/3 text-center lg:text-left">
+        <p className="text-black dark:text-white text-3xl lg:text-5xl font-bold">
           Rabiul Ahsan
         </p>
-        <p className="text-3xl font-semibold text-slate-700 dark:text-blue-400 mt-3">
+        <p className="text-2xl lg:text-3xl font-semibold text-slate-700 dark:text-blue-400 mt-3">
           I&apos;m a{" "}
           <span>
             <TypeAnimation
@@ -90,7 +90,7 @@ const Header = () => {
           I am a MERN stack Developer. I build dynamic and attractive website
           for you.
         </p>
-        <div className="flex gap-x-6">
+        <div className="flex gap-x-6 justify-center lg:justify-start">
           <a
             href=""
             target="blank"
@@ -100,7 +100,7 @@ const Header = () => {
             <button
               onMouseMove={(e) => handleMouseMove(e)}
               style={buttonStyles}
-              className={`button px-6 py-2 font-semibold text-lg rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
+              className={` button px-6 py-2 font-semibold text-lg rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
             >
               <span className="relative z-10">Resume</span>
             </button>
@@ -116,10 +116,10 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className="header-img">
+      <div className="header-img ">
         <img
           src="https://i.ibb.co/mFY4YvC/rabiul.jpg"
-          className="h-[300px] border-4 border-gray-600 dark:border-blue-200"
+          className="h-[200px] lg:h-[300px] border-4 border-gray-600 dark:border-blue-200"
           alt=""
         />
       </div>
