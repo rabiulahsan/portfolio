@@ -10,7 +10,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 
 const Home = () => {
   return (
-    <div className=" dark:bg-slate-900 ">
+    <div className=" dark:bg-slate-900 " id="home">
       <ScrollToTop
         smooth
         className="bg-blue-400 text-white text-sm px-[6px] py-1"

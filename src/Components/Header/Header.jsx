@@ -118,7 +118,7 @@ const Header = () => {
       </div>
       <div className="header-img">
         <img
-          src="/src/assets/rabiul.jpg"
+          src="https://i.ibb.co/mFY4YvC/rabiul.jpg"
           className="h-[300px] border-4 border-gray-600 dark:border-blue-200"
           alt=""
         />

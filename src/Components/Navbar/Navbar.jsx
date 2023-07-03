@@ -69,7 +69,7 @@ const Navbar = () => {
   });
 
   return (
-    <div className="sticky top-0 z-10">
+    <div className="sticky top-0 z-20">
       <div className="flex  justify-between items-center px-[10%] py-[1%] bg-white dark:bg-slate-900 ">
         <Link to="/">
           <p className="text-balck dark:text-white font-bold text-3xl cursor-pointer">

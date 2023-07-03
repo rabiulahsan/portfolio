@@ -16,10 +16,14 @@ const About = () => {
   };
 
   return (
-    <>
+    <div id="about">
       <SectionTitle heading="About Me"></SectionTitle>
       <div className="px-[10%] py-[4%] flex justify-around items-center">
-        <img src="/src/assets/rabiul.jpg" alt="" className="h-[300px]" />
+        <img
+          src="https://i.ibb.co/mFY4YvC/rabiul.jpg"
+          alt=""
+          className="h-[300px]"
+        />
         <div className="w-1/2 px-[4%]">
           <p className="w-[80%] text-gray-600 dark:text-gray-400 mb-5 text-lg">
             Hello! I am Rabiul Ahsan. I live in Barishal, Bangladesh. Right now,
@@ -42,7 +46,7 @@ const About = () => {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

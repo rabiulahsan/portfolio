@@ -18,7 +18,7 @@ const Contact = () => {
     "--before-left": `${coordinates.x}px`,
   };
   return (
-    <>
+    <div id="contact">
       <SectionTitle heading="Let's Talk"></SectionTitle>
       <div className="flex justify-around items-center px-[15%] py-[5%]">
         <div className="flex flex-col w-1/2 gap-y-8 mx-auto">
@@ -71,7 +71,7 @@ const Contact = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
