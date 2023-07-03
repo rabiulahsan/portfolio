@@ -69,7 +69,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div>
+      <div className="mb-16 lg:mb-0">
         <p>
           Copyright © 2023 - All right reserved by{" "}
           <span className=" text-lg font-semibold text-blue-400">
