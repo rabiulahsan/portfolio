@@ -7,7 +7,7 @@ const Projects = () => {
     {
       id: 1,
       name: "Skill Share",
-      img: "/src/assets/skill-share.png",
+      img: "https://i.ibb.co/5hxsvWJ/skill-share.png",
       description:
         "It is a e-learning platform. Where students canm buy thier course. Also who wants to tech they can upload thier classes. And also there is an admin panel who can control all those students and instructors.",
       technologies:
@@ -19,7 +19,7 @@ const Projects = () => {
     {
       id: 2,
       name: "Toy Marketplace",
-      img: "/src/assets/toy-market.png",
+      img: "https://i.ibb.co/2yQHW3f/chefs-house.png",
       description:
         "It is a marketplace , where user can buy products but before that they have to login first.",
       technologies:
@@ -31,7 +31,7 @@ const Projects = () => {
     {
       id: 3,
       name: "Chefs House",
-      img: "/src/assets/chefs-house.png",
+      img: "https://i.ibb.co/2yQHW3f/chefs-house.png",
       description:
         "In this project there is the list of some famous cheif with thier special dishes. And also there is some description about those chefs and recipes.",
       technologies:
@@ -42,7 +42,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div>
+    <div id="project">
       <SectionTitle heading="Projects"></SectionTitle>
       <div className="grid grid-cols-3 px-[10%] py-[5%] gap-6">
         {projects.map((project) => (

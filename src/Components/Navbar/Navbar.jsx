@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import {
   BsFillSunFill,
   BsFillMoonFill,
@@ -79,31 +80,41 @@ const Navbar = () => {
           <ul className="flex text-base font-semibold ">
             <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
               <span>
-                <Link to="/">Home</Link>
+                <Link to="home" smooth={true} duration={500} offset={-50}>
+                  Home
+                </Link>
               </span>
             </li>
 
             <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
               <span>
-                <Link to="/">About</Link>
+                <Link to="about" smooth={true} duration={500} offset={-50}>
+                  About
+                </Link>
               </span>
             </li>
 
             <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
               <span>
-                <Link to="/">Skills</Link>
+                <Link to="skill" smooth={true} duration={500} offset={-50}>
+                  Skills
+                </Link>
               </span>
             </li>
 
             <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
               <span>
-                <Link to="/">Projects</Link>
+                <Link to="project" smooth={true} duration={500} offset={-50}>
+                  Projects
+                </Link>
               </span>
             </li>
 
             <li className="cursor-pointer font-semibold mx-2 px-2 navlink-hover hover:text-blue-400">
               <span>
-                <Link to="/">Contact</Link>
+                <Link to="contact" smooth={true} duration={500} offset={-50}>
+                  Contact
+                </Link>
               </span>
             </li>
           </ul>

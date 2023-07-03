@@ -28,7 +28,7 @@ const Skills = () => {
   ];
 
   return (
-    <div>
+    <div className="skill">
       <SectionTitle heading="Skills"></SectionTitle>
       <div className="flex justify-center gap-x-[12%] mx-auto  px-[10%] py-[4%]">
         <div className="w-[30%]">
