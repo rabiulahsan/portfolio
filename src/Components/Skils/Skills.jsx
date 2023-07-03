@@ -28,10 +28,10 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skill">
+    <div id="skill" className="mb-10 lg:mb-0">
       <SectionTitle heading="Skills"></SectionTitle>
-      <div className="flex justify-center gap-x-[12%] mx-auto  px-[10%] py-[4%]">
-        <div className="w-[30%]">
+      <div className="flex flex-col lg:flex-row justify-center gap-y-6 gap-x-[12%] mx-auto  px-[10%] py-[4%]">
+        <div className="w-full lg:w-[30%]">
           <p className="flex justify-between  items-center dark:text-white ">
             {" "}
             <span className="flex items-center">
@@ -49,9 +49,9 @@ const Skills = () => {
               }}
             >
               {frontOpen ? (
-                <IoIosArrowDown></IoIosArrowDown>
-              ) : (
                 <IoIosArrowUp></IoIosArrowUp>
+              ) : (
+                <IoIosArrowDown></IoIosArrowDown>
               )}
             </span>
           </p>
@@ -71,7 +71,7 @@ const Skills = () => {
         </div>
 
         {/* backend  */}
-        <div className="w-[30%]">
+        <div className="w-full lg:w-[30%]">
           <p className="flex justify-between  items-center dark:text-white ">
             {" "}
             <p className="flex items-center">
