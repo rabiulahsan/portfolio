@@ -72,7 +72,7 @@ const Navbar = () => {
   });
 
   return (
-    <>
+    <div>
       <div className="sticky top-0 z-20 hidden lg:block">
         <div className="flex  justify-between items-center px-[10%] py-[1%] bg-white dark:bg-slate-900 ">
           <Link to="/">
@@ -162,6 +162,10 @@ const Navbar = () => {
       {/* for responsive  */}
       <div className="relative">
         <nav className="bg-gray-200 dark:bg-slate-700 p-4 flex justify-between items-center fixed bottom-0 w-full lg:hidden z-20">
+          <span
+            className="absolute bg-blue-400 h-[4px] left-0 bottom-[60px] w-full"
+            style={{ transform: `translatex(${completion - 100}%)` }}
+          />
           <div>
             <Link to="home" smooth={true} duration={500} offset={-50}>
               <p className="text-lg text-slate-700 dark:text-white  font-bold cursor-pointer">
@@ -181,6 +185,7 @@ const Navbar = () => {
               )}
             </span>
           </div>
+
           <div
             className={` absolute flex flex-col  left-0 w-full duration-500 bg-gray-200 dark:bg-slate-700 text-slate-700 dark:text-white ${
               toggle ? "bottom-[100%]" : "bottom-[-200px]"
@@ -260,7 +265,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-    </>
+    </div>
   );
 };
 
