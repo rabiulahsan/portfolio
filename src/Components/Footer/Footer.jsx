@@ -10,23 +10,33 @@ const Footer = () => {
     <footer className="footer footer-center p-10 text-white bg-slate-800   ">
       <div className="grid grid-flow-col gap-4">
         <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="/">Home</Link>
+          <Link to="home" smooth={true} duration={500} offset={-50}>
+            Home
+          </Link>
         </span>
 
         <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="/">About</Link>
+          <Link to="about" smooth={true} duration={500} offset={-50}>
+            About
+          </Link>
         </span>
 
         <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="/">Skills</Link>
+          <Link to="skill" smooth={true} duration={500} offset={-50}>
+            Skills
+          </Link>
         </span>
 
         <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="/">Projects</Link>
+          <Link to="project" smooth={true} duration={500} offset={-50}>
+            Projects
+          </Link>
         </span>
 
         <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="/">Contact</Link>
+          <Link to="contact" smooth={true} duration={500} offset={-50}>
+            Contact
+          </Link>
         </span>
       </div>
       <div>
