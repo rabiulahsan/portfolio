@@ -29,7 +29,7 @@ const SingleProject = ({ project }) => {
         <span className="font-semibold text-lg ">Description: </span>
         {description}
       </p>
-      <div className=" flex  justify-between items-center mt-auto">
+      <div className=" flex flex-col lg:flex-row gap-y-2 mt-5 justify-between items-center lg:mt-auto">
         {/* live site lnk  */}
         <a href={liveSite} target="blank">
           <button

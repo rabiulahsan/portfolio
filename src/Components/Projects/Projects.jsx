@@ -42,9 +42,9 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="project">
+    <div id="project" className="mb-10 lg:mb-0">
       <SectionTitle heading="Projects"></SectionTitle>
-      <div className="grid grid-cols-3 px-[10%] py-[5%] gap-6">
+      <div className="grid grid-cols-1 text-center lg:grid-cols-3 px-[10%] py-[5%] gap-6">
         {projects.map((project) => (
           <SingleProject project={project} key={project.id}></SingleProject>
         ))}
