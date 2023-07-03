@@ -71,7 +71,7 @@ const Footer = () => {
       </div>
       <div>
         <p>
-          Copyright © 2023 - All right reserved by
+          Copyright © 2023 - All right reserved by{" "}
           <span className=" text-lg font-semibold text-blue-400">
             Rabiul Ahsan
           </span>
