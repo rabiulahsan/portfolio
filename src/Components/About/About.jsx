@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import "./About.css";
+import { Link } from "react-scroll";
 
 const About = () => {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -34,7 +35,7 @@ const About = () => {
             in this portfolio.
           </p>
           <span>
-            <a href="">
+            <Link to="contact">
               <button
                 onMouseMove={(e) => handleMouseMove(e)}
                 style={buttonStyles}
@@ -42,7 +43,7 @@ const About = () => {
               >
                 <span className="relative z-10">Contact Me</span>
               </button>
-            </a>
+            </Link>
           </span>
         </div>
       </div>

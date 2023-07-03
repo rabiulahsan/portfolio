@@ -6,6 +6,7 @@ import {
 import "./Header.css";
 import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -105,7 +106,7 @@ const Header = () => {
               <span className="relative z-10">Resume</span>
             </button>
           </a>
-          <a href="">
+          <Link to="contact">
             <button
               onMouseMove={(e) => handleMouseMove(e)}
               style={buttonStyles}
@@ -113,7 +114,7 @@ const Header = () => {
             >
               <span className="relative z-10">Hire Me</span>
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="header-img ">
