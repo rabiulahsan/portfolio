@@ -106,7 +106,7 @@ const Header = () => {
               <span className="relative z-10">Resume</span>
             </button>
           </a>
-          <Link to="contact">
+          <Link to="contact" smooth={true} duration={500} offset={-50}>
             <button
               onMouseMove={(e) => handleMouseMove(e)}
               style={buttonStyles}
