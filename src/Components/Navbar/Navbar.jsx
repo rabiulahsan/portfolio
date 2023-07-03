@@ -182,8 +182,8 @@ const Navbar = () => {
             </span>
           </div>
           <div
-            className={` absolute flex flex-col bottom-[100%] left-0 w-full duration-500 bg-gray-200 dark:bg-slate-700 text-slate-700 dark:text-white ${
-              toggle ? "" : "bottom-[-200px]"
+            className={` absolute flex flex-col  left-0 w-full duration-500 bg-gray-200 dark:bg-slate-700 text-slate-700 dark:text-white ${
+              toggle ? "bottom-[100%]" : "bottom-[-200px]"
             }`}
           >
             <ul className="grid grid-cols-3 text-center px-4 pb-6">
