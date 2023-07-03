@@ -16,16 +16,16 @@ const About = () => {
   };
 
   return (
-    <div id="about">
+    <div id="about" className="mb-10 lg:mb-0">
       <SectionTitle heading="About Me"></SectionTitle>
-      <div className="px-[10%] py-[4%] flex justify-around items-center">
+      <div className="px-[10%] py-[4%] flex gap-y-8 justify-around items-center flex-col lg:flex-row">
         <img
           src="https://i.ibb.co/mFY4YvC/rabiul.jpg"
           alt=""
           className="h-[300px]"
         />
-        <div className="w-1/2 px-[4%]">
-          <p className="w-[80%] text-gray-600 dark:text-gray-400 mb-5 text-lg">
+        <div className="w-full lg:w-1/2 lg:text-left lg:px-[4%] text-center">
+          <p className=" w-full lg:w-[80%] text-gray-600 dark:text-gray-400 mb-5 text-lg">
             Hello! I am Rabiul Ahsan. I live in Barishal, Bangladesh. Right now,
             i am an undergraduate in Computer Science and Engineering at UGV. I
             am a Web Developer. I can build a website by using MERNstack
