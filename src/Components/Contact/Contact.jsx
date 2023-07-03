@@ -18,10 +18,10 @@ const Contact = () => {
     "--before-left": `${coordinates.x}px`,
   };
   return (
-    <div id="contact">
+    <div id="contact" className="mb-10 lg:mb-0">
       <SectionTitle heading="Let's Talk"></SectionTitle>
-      <div className="flex justify-around items-center px-[15%] py-[5%]">
-        <div className="flex flex-col w-1/2 gap-y-8 mx-auto">
+      <div className="flex flex-col lg:flex-row justify-around items-center px-[15%] py-[5%]">
+        <div className="flex flex-col w-full lg:w-1/2 gap-y-8 mx-auto mb-8 lg:mb-0">
           <div className=" flex items-center gap-5">
             <span className="text-blue-400 text-3xl">
               <AiOutlineMail></AiOutlineMail>
@@ -58,7 +58,7 @@ const Contact = () => {
             </span>
           </div>
         </div>
-        <div className="text-slate-700 dark:text-white flex flex-col gap-y-8 w-1/2 px-[5%]">
+        <div className="text-slate-700 dark:text-white flex flex-col gap-y-8 w-full lg:w-1/2 px-[5%]">
           <input type="text" placeholder="Name" className="input-style" />
           <input type="text" placeholder="Email" className="input-style" />
           <textarea placeholder="Message" className="input-style"></textarea>
