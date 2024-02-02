@@ -22,14 +22,6 @@ const ProgressBar = ({ name, learn }) => {
           }}
         ></motion.div>
       </div>
-
-      {/* <motion.progress
-        className="progress progress-info dark:bg-slate-600 w-full"
-        value={learn}
-        max="100"
-        initial={{ x: -100 }}
-        whileInView={{ x: 0, transition: { delay: 0.7, duration: 0.5 } }}
-      ></motion.progress> */}
     </div>
   );
 };
