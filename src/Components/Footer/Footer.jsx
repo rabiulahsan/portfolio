@@ -3,42 +3,10 @@ import {
   AiFillLinkedin,
   AiOutlineInstagram,
 } from "react-icons/ai";
-import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
     <footer className="footer footer-center px-4 py-6 lg:p-10 text-white bg-slate-800   ">
-      <div className="grid grid-flow-col gap-4">
-        <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="home" smooth={true} duration={500} offset={-50}>
-            Home
-          </Link>
-        </span>
-
-        <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="about" smooth={true} duration={500} offset={-50}>
-            About
-          </Link>
-        </span>
-
-        <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="skill" smooth={true} duration={500} offset={-50}>
-            Skills
-          </Link>
-        </span>
-
-        <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="project" smooth={true} duration={500} offset={-50}>
-            Projects
-          </Link>
-        </span>
-
-        <span className="text-base font-semibold cursor-pointer hover:underline hover:text-blue-400">
-          <Link to="contact" smooth={true} duration={500} offset={-50}>
-            Contact
-          </Link>
-        </span>
-      </div>
       <div>
         <div className="grid grid-flow-col gap-4">
           <a
