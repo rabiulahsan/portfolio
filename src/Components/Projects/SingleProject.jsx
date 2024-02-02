@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
+import { useRef, useState } from "react";
 
 /* eslint-disable react/prop-types */
 const SingleProject = ({ project }) => {
@@ -18,8 +19,24 @@ const SingleProject = ({ project }) => {
     "--before-left": `${coordinates.x}px`,
   };
 
+  //for scrolling
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", ".5 .6"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.4, 1]);
+
   return (
-    <div className="p-4 border border-gray-400 text-slate-700 dark:text-white flex flex-col">
+    <motion.div
+      ref={ref}
+      style={{
+        scale: scaleProgress,
+        // scale: scrollYProgress,
+        opacity: scrollYProgress,
+      }}
+      className="p-4 border border-gray-400 text-slate-700 dark:text-white flex flex-col"
+    >
       <img src={img} alt="" className="h-[200px] mb-5" />
       <p className="text-2xl font-semibold mb-3">{name}</p>
       <p className="mb-3">
@@ -67,7 +84,7 @@ const SingleProject = ({ project }) => {
           </>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
