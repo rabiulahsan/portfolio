@@ -7,6 +7,7 @@ import "./Header.css";
 import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -27,11 +28,49 @@ const Header = () => {
     window.open(fileUrl, "_blank");
   };
 
+  //this is for staggering animation on profile icon
+  const container = {
+    animate: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.5,
+        staggerDirection: 1,
+      },
+    },
+    initial: {
+      scale: 0.2,
+      opacity: 0,
+    },
+  };
+
+  const items = {
+    animate: {
+      opacity: 1,
+      y: 0,
+      // transition: { duration: 0.6, ease: easeInOut },
+    },
+
+    initial: {
+      opacity: 0,
+      y: 120,
+      // transition: { duration: 0.8, ease: easeInOut },
+    },
+  };
+
   return (
     <div className="px-[10%] py-[8%] gap-y-6  flex justify-around items-center flex-col-reverse lg:flex-row ">
       <div className="">
-        <ul className="text-2xl dark:text-white flex lg:flex-col gap-4 items-center">
-          <li>
+        <motion.ul
+          variants={container}
+          // animate="animate"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="text-2xl dark:text-white flex lg:flex-col gap-4 items-center"
+        >
+          <motion.li variants={items}>
             <a
               title="Github Profile link"
               href="https://github.com/rabiulahsan"
@@ -40,8 +79,8 @@ const Header = () => {
             >
               <AiOutlineGithub></AiOutlineGithub>
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={items}>
             <a
               title="Linkedin Profile link"
               href="https://www.linkedin.com/in/rabiul-ahsan/"
@@ -50,8 +89,8 @@ const Header = () => {
             >
               <AiFillLinkedin></AiFillLinkedin>
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={items}>
             <a
               title="Instagram Profile link"
               href="https://www.instagram.com/_rabiul_ahsan_/"
@@ -60,8 +99,8 @@ const Header = () => {
             >
               <AiOutlineInstagram></AiOutlineInstagram>
             </a>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
       </div>
       <div className="w-full lg:w-1/3 text-center lg:text-left">
         <p className="text-black dark:text-white text-3xl lg:text-5xl font-bold">

@@ -24,7 +24,7 @@ const About = () => {
         <div className="lg:w-1/2">
           <FadeAnimations
             direction="right"
-            once={true}
+            once={false}
             delay={0.3}
             duration={0.5}
           >
@@ -38,7 +38,7 @@ const About = () => {
         <div className="w-full lg:w-1/2 lg:text-left lg:px-[4%] text-center">
           <FadeAnimations
             direction="left"
-            once={true}
+            once={false}
             delay={0.3}
             duration={0.5}
           >
