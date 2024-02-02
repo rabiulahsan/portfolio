@@ -11,7 +11,7 @@ const ProgressBar = ({ name, learn }) => {
       </div> */}
 
       <progress
-        className="progress progress-info w-full"
+        className="progress progress-info dark:bg-slate-600 w-full"
         value={learn}
         max="100"
       ></progress>
