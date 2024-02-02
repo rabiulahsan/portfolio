@@ -29,7 +29,7 @@ const SingleProject = ({ project }) => {
         <span className="font-semibold text-lg ">Description: </span>
         {description}
       </p>
-      <div className=" flex flex-col lg:flex-row gap-y-2 mt-5 justify-between items-center lg:mt-auto">
+      <div className=" flex flex-col lg:flex-row gap-y-2 mt-5 justify-around items-center lg:mt-auto">
         {/* live site lnk  */}
         <a href={liveSite} target="blank">
           <button
@@ -51,17 +51,20 @@ const SingleProject = ({ project }) => {
             <span className="relative z-10">Client Code</span>
           </button>
         </a>
-
-        {/* server side code link  */}
-        <a href={backend} target="blank">
-          <button
-            onMouseMove={(e) => handleMouseMove(e)}
-            style={buttonStyles}
-            className={` button px-3 py-2 font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
-          >
-            <span className="relative z-10">Backend Code</span>
-          </button>
-        </a>
+        {backend && (
+          <>
+            {/* server side code link  */}
+            <a href={backend} target="blank">
+              <button
+                onMouseMove={(e) => handleMouseMove(e)}
+                style={buttonStyles}
+                className={` button px-3 py-2 font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-blue-400 before:bg-slate-700 dark:bg-blue-400 dark:border dark:border-blue-400  dark:before:bg-slate-900`}
+              >
+                <span className="relative z-10">Backend Code</span>
+              </button>
+            </a>
+          </>
+        )}
       </div>
     </div>
   );
