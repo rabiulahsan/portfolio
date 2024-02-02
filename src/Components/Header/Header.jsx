@@ -67,8 +67,8 @@ const Header = () => {
           // animate="animate"
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true }}
-          className="text-2xl dark:text-white flex lg:flex-col gap-4 items-center"
+          viewport={{ once: false }}
+          className="text-2xl dark:text-white flex lg:flex-col gap-6 items-center"
         >
           <motion.li variants={items}>
             <a
