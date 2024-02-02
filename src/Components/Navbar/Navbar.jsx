@@ -72,8 +72,8 @@ const Navbar = () => {
   });
 
   return (
-    <div>
-      <div className="sticky top-0 z-20 hidden lg:block">
+    <div className="">
+      <div className="fixed w-full top-0 left-0 z-30 hidden lg:block">
         <div className="flex  justify-between items-center px-[10%] py-[1%] bg-white dark:bg-slate-900 ">
           <Link to="/">
             <p className="text-balck dark:text-white font-bold text-3xl cursor-pointer">
@@ -153,10 +153,10 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <span
-          className="absolute bg-blue-400 h-[4px] left-0 bottom-[-4px] w-full"
+        {/* <span
+          className="absolute bg-blue-400 h-[4px] left-0 bottom-[-4px] w-full "
           style={{ transform: `translatex(${completion - 100}%)` }}
-        />
+        /> */}
       </div>
 
       {/* for responsive  */}
