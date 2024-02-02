@@ -5,6 +5,7 @@ const SingleProject = ({ project }) => {
   const { img, name, technologies, description, liveSite, client, backend } =
     project;
 
+  //for button
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
   const handleMouseMove = (e) => {
     const x = e.pageX - e.currentTarget.offsetLeft;
